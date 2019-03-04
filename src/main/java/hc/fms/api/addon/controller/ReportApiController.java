@@ -55,7 +55,11 @@ public class ReportApiController {
 	@Autowired
 	private FmsProperties fmsProps;
 	private Logger logger = LoggerFactory.getLogger(ReportApiController.class);
-
+	
+	//junhee's
+//	@RequestMapping("/ReportTest")
+//	public 
+	
 	@RequestMapping("/tracker/list")
 	public TrackerResponse getTrackers(@RequestBody Long groupId,HttpSession session) {
 		TrackerResponse response = trackerService.getTrackerList(HttpUtil.hashKey(session));
